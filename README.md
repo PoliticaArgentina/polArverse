@@ -3,7 +3,7 @@
 
 ### `{polArverse}`
 
-## <a><img src="man/figures/logo.png" width="200" align="right"/></a> Universo de :package: para trabajar con herramientas y datos de `Pol`ítica `Ar`gentina desde `R`.
+## <a><img src="man/figures/logo.png" align="right" width="300"/></a> Universo de :package: para trabajar con herramientas y datos de `Pol`ítica `Ar`gentina desde `R`.
 
 <!-- badges: start -->
 
@@ -14,19 +14,14 @@ status](https://www.r-pkg.org/badges/version/polArverse)](https://CRAN.R-project
 
 <!-- badges: end -->
 
-<a><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/geoAr.png?raw=true" width="100" align="left"/></a>
-[:package: {geoAr}](https://github.com/PoliticaArgentina/geoAr)
+[<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/geoAr)
 
-[:package: {opinAr}](https://github.com/PoliticaArgentina/opinAr)
+[<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/opinAr.PNG?raw=true" width="240"/>](https://github.com/PoliticaArgentina/opinAr)
 
-<a><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/opinAr.PNG?raw=true" width="100" align="left"/></a>
-[:package: {opinAr}](https://github.com/PoliticaArgentina/opinAr)
+[<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/legislAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/legislAr)
 
-<a><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/legislAr.png?raw=true" width="100" align="left"/></a>
-[:package: {legislAr}](https://github.com/PoliticaArgentina/legislAr)
+<img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/discursAr.png?raw=true" width="240"/>
 
-<a><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/discursAr.png?raw=true" width="100" align="left"/></a>
-{discursAr}
+<img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="240"/>
 
-<a><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="100" align="left"/></a>
-{electorAr}
+[<img src="https://github.com/PoliticaArgentina/polar_bot/raw/master/hex/polArbot.png" width="240"/>](https://github.com/PoliticaArgentina/polar_bot)
