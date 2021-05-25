@@ -16,9 +16,8 @@ RoxygenNote: 7.1.1
 Imports: 
     cli,
     crayon,
-    rstudioapi,
-    geoAr,
-    discursAr,
-    legislAr,
-    electorAr, 
-    opinAr
+    rstudioapi
+Remotes:
+    politicaargentina/geoAr,
+    politicaargentina/legislAr,
+    politicaargentina/opinAr
