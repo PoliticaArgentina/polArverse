@@ -1,6 +1,6 @@
 # based in https://github.com/tidyverse/tidyverse/blob/master/R/attach.R
 
-core <- c("geoAr", "electorAr", "legislAr", "discursAr", "opinAr")
+core <- c("geoAr",  "legislAr", "opinAr")
 
 core_unloaded <- function() {
   search <- paste0("package:", core)

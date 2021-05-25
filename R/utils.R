@@ -31,7 +31,7 @@ text_col <- function(x) {
 #' @examples
 #' polArverse_packages()
 polArverse_packages <- function(include_self = TRUE) {
-  raw <- utils::packageDescription("polArverse")$Imports
+  raw <- utils::packageDescription("polArverse")$Remotes
   imports <- strsplit(raw, ",")[[1]]
   parsed <- gsub("^\\s+|\\s+$", "", imports)
   names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))

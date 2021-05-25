@@ -17,7 +17,7 @@ Imports:
     cli,
     crayon,
     rstudioapi
-Remotes:
-    politicaargentina/geoAr,
-    politicaargentina/legislAr,
-    politicaargentina/opinAr
+Remotes: 
+    github:PoliticaArgentina/geoAr,
+    github:PoliticaArgentina/legislAr,
+    github:PoliticaArgentina/opinAr
