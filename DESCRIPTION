@@ -16,8 +16,15 @@ RoxygenNote: 7.1.1
 Imports: 
     cli,
     crayon,
-    rstudioapi
+    rstudioapi,
+    geoAr,
+    legislAr,
+    electorAr,
+    opinAr
 Remotes: 
-    github:PoliticaArgentina/geoAr,
-    github:PoliticaArgentina/legislAr,
-    github:PoliticaArgentina/opinAr
+    PoliticaArgentina/geoAr,
+    PoliticaArgentina/legislAr,
+    PoliticaArgentina/electorAr,
+    PoliticaArgentina/opinAr
+URL: https://github.com/PoliticaArgentina/polArverse
+BugReports: https://github.com/PoliticaArgentina/polArverse/issues
