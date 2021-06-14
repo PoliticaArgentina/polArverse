@@ -12,6 +12,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![CRAN
 status](https://www.r-pkg.org/badges/version/polArverse)](https://CRAN.R-project.org/package=opinAr)
 
+[![R-CMD-check](https://github.com/PoliticaArgentina/polArverse/workflows/R-CMD-check/badge.svg)](https://github.com/PoliticaArgentina/polArverse/actions)
 <!-- badges: end -->
 
 [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/geoAr)
