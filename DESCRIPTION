@@ -20,11 +20,13 @@ Imports:
     geoAr,
     legislAr,
     electorAr,
-    opinAr
+    opinAr,
+    discursAr
 Remotes: 
     PoliticaArgentina/geoAr,
     PoliticaArgentina/legislAr,
     PoliticaArgentina/electorAr,
-    PoliticaArgentina/opinAr
+    PoliticaArgentina/opinAr,
+    PoliticaArgentina/discursAr
 URL: https://github.com/PoliticaArgentina/polArverse
 BugReports: https://github.com/PoliticaArgentina/polArverse/issues
