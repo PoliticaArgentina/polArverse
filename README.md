@@ -10,7 +10,7 @@ library(polArverse)
 #> -- Attaching packages ------------------------------------- polArverse0.0.1.0 --
 #> v geoAr     0.0.1.2     v electorAr 0.0.1.0
 #> v legislAr  0.0.1.0     v discursAr 0.0.1.0
-#> v opinAr    0.0.1
+#> v opinAr    0.0.1.1     v polArViz  0.0.1.0
 ```
 
 ## <a><img src="man/figures/logo.png" align="right" width="300"/></a> Universo de :package: para trabajar con herramientas y datos de `Pol`ítica `Ar`gentina desde `R`.
