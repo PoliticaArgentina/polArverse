@@ -1,0 +1,180 @@
+---
+title: "electorAr"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(polArverse)
+```
+
+
+El :package: `{electorAr}` brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el [Atlas Electoral de Andy Tow](https://www.andytow.com/blog/). Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019). 
+ 
+```{r}
+
+library(electorAr)
+
+# Elecciones disponibles según dos fuente de datos
+# 'results' para datos agregados y 'data' para escrutinios provisorios 
+
+show_available_elections(source = "results")
+
+```
+ 
+Habiendo elegido los datos agregados, podemos, por ejemplo, con la ayuda de `{dplyr}` filtrar las elecciones disponibles con resultados para Goberndaro de la Provincia de Tucumán. 
+
+```{r}
+
+# Filtro eleciones de interés
+(gobernadores_tucuman <- show_available_elections(source = "results") %>% 
+  dplyr::filter(NOMBRE == "TUCUMAN", 
+                category == "gober"))
+
+```
+
+La función `show_available_elections()` (con el parámetro `source = "results"`) nos devuelve el listado de dichas elecciones con 4 variables relevantes (`district`, `category`, `round`, `year`) que son los parámetros necesarios a ser completados para descargar los datos de una elección determinada. 
+
+Una alternativa posible es descargar una elección en particular con `get_election_results()`: 
+
+```{r}
+
+electorAr::get_election_results(district = "tucuman", 
+                                category = "gober", 
+                                round = "gral", 
+                                year = 1999)
+
+
+```
+
+Pero también podemos descargarnos todas las elecciones juntas, del siguiente modo: 
+
+
+```{r}
+
+# Descargo multiples elecciones seleccionadas
+
+(elecciones <- get_multiple_elections(gobernadores_tucuman,
+                                      source = 'results'))
+
+```
+
+`get_multiple_elections()` tiene como paráemtro obligatorio `source` donde debe definirse cual de las dos fuentes de datos se está llamando. Además tiene como posibilidad devolver un `tibble` único (simplificando la estructura de lista de la variable `election`) con la opción `unnest = TRUE`. 
+
+```{r}
+
+(elecciones_simplificadas <- get_multiple_elections(gobernadores_tucuman,
+                                      source = 'results', 
+                                      unnest = TRUE))
+```
+
+## INDICADORES
+
+`elecotrAr()` provee además una familia de funciones `compute_` que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:  
+
+
+```{r}
+# Seleciono la elección a Gobernador de TUCUMAN en 1999
+(eleccion99 <- elecciones$election[[5]])
+```
+
+
+### `compute_nep()`
+
+```{r}
+# Número Efectivo de Partidos (NEP)
+compute_nep(eleccion99)
+
+```
+
+
+### `compute_concentration()`
+
+```{r}
+# Concentración
+compute_concentration(eleccion99)
+
+```
+
+
+### `compute_co()`
+
+```{r}
+# Competitividad
+compute_competitiveness(eleccion99)
+
+```
+
+## Visualización
+
+Con la ayuda del :package: `polArViz` podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.
+
+Ppor el momento solo disponible para los descargados desde `source = "data"`. Descarguemos entonces nuevos datos: 
+
+
+```{r}
+
+datos <- get_election_data(district = "tucuman", 
+                           category = "dip",
+                           round = "gral", 
+                           year = 2015)
+
+
+```
+
+
+
+### Tabla
+
+```{r}
+
+polArViz::tabulate_results(datos)
+```
+
+
+### Gráfico 
+
+```{r}
+polArViz::plot_results(datos)
+```
+
+
+
+### Mapas
+
+Para poder mapear la elección, los datos deberían descargarse a nivel `departamento` con el parámetro `level`. 
+
+```{r}
+
+datos_depto <- get_election_data(district = "tucuman", 
+                           category = "dip",
+                           round = "gral", 
+                           year = 2015, 
+                           level = "departamento")
+
+```
+
+
+### Mapas
+
+```{r}
+
+polArViz::map_results(datos_depto)
+
+
+```
+
+
+Este nivel de agregación nos permite también utilizar la función `plot_results()`. La misma, al detectar que se trata de datos al nivel de `departamentos`  hará uso de grillas predefinidas por el paquete `{geoAr}` para ser usadas por `geofacet::facet_grid()`
+
+```{r}
+
+polArViz::plot_results(datos_depto)
+
+```
+

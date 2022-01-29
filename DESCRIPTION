@@ -32,3 +32,5 @@ Remotes:
     PoliticaArgentina/polArViz
 URL: https://github.com/PoliticaArgentina/polArverse
 BugReports: https://github.com/PoliticaArgentina/polArverse/issues
+Suggests: 
+    rmarkdown
