@@ -8,7 +8,7 @@
 
 library(polArverse)
 #> -- Attaching packages ------------------------------------- polArverse0.0.1.0 --
-#> v geoAr     0.0.1.0     v electorAr 0.0.1.0
+#> v geoAr     0.0.1.2     v electorAr 0.0.1.0
 #> v legislAr  0.0.1.0     v discursAr 0.0.1.0
 #> v opinAr    0.0.1
 ```
@@ -24,6 +24,24 @@ status](https://www.r-pkg.org/badges/version/polArverse)](https://CRAN.R-project
 [![R-CMD-check](https://github.com/PoliticaArgentina/polArverse/workflows/R-CMD-check/badge.svg)](https://github.com/PoliticaArgentina/polArverse/actions)
 
 <!-- badges: end -->
+
+[:package: {geoAr}](https://github.com/PoliticaArgentina/geoAr) - Datos
+*geo* Argentina:
+
+[:package: {legislAr}](https://github.com/PoliticaArgentina/legislAr) -
+Datos legislativos de Argentina
+
+[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) -
+Datos electorales de Argentina
+
+[:package: {opinAr}](https://github.com/PoliticaArgentina/opinAr) -
+Datos de opinión púbica de Argentina
+
+[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) -
+Datos electorales de Argentina
+
+[:package: {polArViz}](https://github.com/PoliticaArgentina/polArViz) -
+Vizualización de datos políticos de Argentina
 
 [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/geoAr)
 [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/opinAr.PNG?raw=true" width="240"/>](https://github.com/PoliticaArgentina/opinAr)

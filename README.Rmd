@@ -30,4 +30,17 @@ library(polArverse)
 
 <!-- badges: end -->
 
+[:package: {geoAr}](https://github.com/PoliticaArgentina/geoAr) - Datos *geo* Argentina:
+
+
+[:package: {legislAr}](https://github.com/PoliticaArgentina/legislAr) - Datos legislativos de Argentina
+
+[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) - Datos electorales de Argentina
+
+[:package: {opinAr}](https://github.com/PoliticaArgentina/opinAr) - Datos de opinión púbica de Argentina
+
+[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) - Datos electorales de Argentina
+
+[:package: {polArViz}](https://github.com/PoliticaArgentina/polArViz) - Vizualización de datos políticos de Argentina
+
 [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/geoAr) [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/opinAr.PNG?raw=true" width="240"/>](https://github.com/PoliticaArgentina/opinAr) [<img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/legislAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/legislAr) [<img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/discursAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/discursAr) [<img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/electorAr) [<img src="https://github.com/PoliticaArgentina/polar_bot/raw/master/hex/polArbot.png" width="240"/>](https://github.com/PoliticaArgentina/polar_bot) [<img src="https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polAr10-10-10.png" width="240"/>](https://github.com/PoliticaArgentina/data_warehouse)
