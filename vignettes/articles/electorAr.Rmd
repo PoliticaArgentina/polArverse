@@ -14,7 +14,7 @@ library(polArverse)
 ```
 
 
-El :package: `{electorAr}` brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el [Atlas Electoral de Andy Tow](https://www.andytow.com/blog/). Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019). 
+`{electorAr}` brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el [Atlas Electoral de Andy Tow](https://www.andytow.com/blog/). Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019). 
  
 ```{r}
 
@@ -75,7 +75,7 @@ Pero también podemos descargarnos todas las elecciones juntas, del siguiente mo
 
 ## INDICADORES
 
-`elecotrAr()` provee además una familia de funciones `compute_` que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:  
+`{elecotrAr}` provee además una familia de funciones `compute_` que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:  
 
 
 ```{r}
@@ -102,7 +102,7 @@ compute_concentration(eleccion99)
 ```
 
 
-### `compute_co()`
+### `compute_competitiveness()`
 
 ```{r}
 # Competitividad
@@ -112,7 +112,7 @@ compute_competitiveness(eleccion99)
 
 ## Visualización
 
-Con la ayuda del :package: `polArViz` podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.
+Con la ayuda de `{polArViz}` podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.
 
 Ppor el momento solo disponible para los descargados desde `source = "data"`. Descarguemos entonces nuevos datos: 
 
@@ -129,7 +129,8 @@ datos <- get_election_data(district = "tucuman",
 
 
 
-### Tabla
+### Tabla -  `{gt}`
+
 
 ```{r}
 
@@ -137,7 +138,7 @@ polArViz::tabulate_results(datos)
 ```
 
 
-### Gráfico 
+### Gráfico -  `{ggplot2}`
 
 ```{r}
 polArViz::plot_results(datos)
@@ -145,7 +146,7 @@ polArViz::plot_results(datos)
 
 
 
-### Mapas
+### Mapas - `{ggplot2}` + `{sf}`
 
 Para poder mapear la elección, los datos deberían descargarse a nivel `departamento` con el parámetro `level`. 
 
@@ -160,7 +161,6 @@ datos_depto <- get_election_data(district = "tucuman",
 ```
 
 
-### Mapas
 
 ```{r}
 
@@ -170,7 +170,7 @@ polArViz::map_results(datos_depto)
 ```
 
 
-Este nivel de agregación nos permite también utilizar la función `plot_results()`. La misma, al detectar que se trata de datos al nivel de `departamentos`  hará uso de grillas predefinidas por el paquete `{geoAr}` para ser usadas por `geofacet::facet_grid()`
+Este nivel de agregación nos permite también utilizar la función `plot_results()`. La misma, al detectar que se trata de datos al nivel de `departamentos`  hará uso de grillas predefinidas por el paquete `{geoAr}` para ser usadas por `{geofacet}` y su función de facetado `facet_grid()`. 
 
 ```{r}
 

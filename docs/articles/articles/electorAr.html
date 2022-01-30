@@ -105,7 +105,7 @@
 <span class="co">#&gt; v geoAr     0.0.1.2     v electorAr 0.0.1.0</span>
 <span class="co">#&gt; v legislAr  0.0.1.0     v discursAr 0.0.1.0</span>
 <span class="co">#&gt; v opinAr    0.0.1.1     v polArViz  0.0.1.0</span></code></pre></div>
-<p>El :package: <a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a> brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el <a href="https://www.andytow.com/blog/">Atlas Electoral de Andy Tow</a>. Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019).</p>
+<p><a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a> brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el <a href="https://www.andytow.com/blog/">Atlas Electoral de Andy Tow</a>. Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a></span><span class="op">)</span>
@@ -212,7 +212,7 @@
 <div id="indicadores" class="section level2">
 <h2 class="hasAnchor">
 <a href="#indicadores" class="anchor"></a>INDICADORES</h2>
-<p><code>elecotrAr()</code> provee además una familia de funciones <code>compute_</code> que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:</p>
+<p><code>{elecotrAr}</code> provee además una familia de funciones <code>compute_</code> que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Seleciono la elección a Gobernador de TUCUMAN en 1999</span>
 <span class="op">(</span><span class="va">eleccion99</span> <span class="op">&lt;-</span> <span class="va">elecciones</span><span class="op">$</span><span class="va">election</span><span class="op">[[</span><span class="fl">5</span><span class="op">]</span><span class="op">]</span><span class="op">)</span>
@@ -253,9 +253,9 @@
 <span class="co">#&gt;   &lt;chr&gt;           &lt;dbl&gt; &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;</span>
 <span class="co">#&gt; 1 23                0.7  1999 gober    gral</span></code></pre></div>
 </div>
-<div id="compute_co" class="section level3">
+<div id="compute_competitiveness" class="section level3">
 <h3 class="hasAnchor">
-<a href="#compute_co" class="anchor"></a><code>compute_co()</code>
+<a href="#compute_competitiveness" class="anchor"></a><code>compute_competitiveness()</code>
 </h3>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Competitividad</span>
@@ -269,7 +269,7 @@
 <div id="visualización" class="section level2">
 <h2 class="hasAnchor">
 <a href="#visualizaci%C3%B3n" class="anchor"></a>Visualización</h2>
-<p>Con la ayuda del :package: <code>polArViz</code> podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.</p>
+<p>Con la ayuda de <a href="https://github.com/PoliticaArgentina/polArViz">polArViz</a> podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.</p>
 <p>Ppor el momento solo disponible para los descargados desde <code>source = "data"</code>. Descarguemos entonces nuevos datos:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
@@ -277,18 +277,19 @@
                            category <span class="op">=</span> <span class="st">"dip"</span>,
                            round <span class="op">=</span> <span class="st">"gral"</span>, 
                            year <span class="op">=</span> <span class="fl">2015</span><span class="op">)</span></code></pre></div>
-<div id="tabla" class="section level3">
+<div id="tabla---gt" class="section level3">
 <h3 class="hasAnchor">
-<a href="#tabla" class="anchor"></a>Tabla</h3>
+<a href="#tabla---gt" class="anchor"></a>Tabla - <code>{gt}</code>
+</h3>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/tabulate_results.html">tabulate_results</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></code></pre></div>
-<div id="yqtvwopchm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="viqumnjtws" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#yqtvwopchm .gt_table {
+#viqumnjtws .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -313,7 +314,7 @@
   border-left-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_heading {
+#viqumnjtws .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -325,7 +326,7 @@
   border-right-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_title {
+#viqumnjtws .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -335,7 +336,7 @@
   border-bottom-width: 0;
 }
 
-#yqtvwopchm .gt_subtitle {
+#viqumnjtws .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -345,13 +346,13 @@
   border-top-width: 0;
 }
 
-#yqtvwopchm .gt_bottom_border {
+#viqumnjtws .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_col_headings {
+#viqumnjtws .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -366,7 +367,7 @@
   border-right-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_col_heading {
+#viqumnjtws .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -386,7 +387,7 @@
   overflow-x: hidden;
 }
 
-#yqtvwopchm .gt_column_spanner_outer {
+#viqumnjtws .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -398,15 +399,15 @@
   padding-right: 4px;
 }
 
-#yqtvwopchm .gt_column_spanner_outer:first-child {
+#viqumnjtws .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yqtvwopchm .gt_column_spanner_outer:last-child {
+#viqumnjtws .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yqtvwopchm .gt_column_spanner {
+#viqumnjtws .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -418,7 +419,7 @@
   width: 100%;
 }
 
-#yqtvwopchm .gt_group_heading {
+#viqumnjtws .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -440,7 +441,7 @@
   vertical-align: middle;
 }
 
-#yqtvwopchm .gt_empty_group_heading {
+#viqumnjtws .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -455,15 +456,15 @@
   vertical-align: middle;
 }
 
-#yqtvwopchm .gt_from_md > :first-child {
+#viqumnjtws .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yqtvwopchm .gt_from_md > :last-child {
+#viqumnjtws .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yqtvwopchm .gt_row {
+#viqumnjtws .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,7 +483,7 @@
   overflow-x: hidden;
 }
 
-#yqtvwopchm .gt_stub {
+#viqumnjtws .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -494,7 +495,7 @@
   padding-left: 12px;
 }
 
-#yqtvwopchm .gt_summary_row {
+#viqumnjtws .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -504,7 +505,7 @@
   padding-right: 5px;
 }
 
-#yqtvwopchm .gt_first_summary_row {
+#viqumnjtws .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -514,7 +515,7 @@
   border-top-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_grand_summary_row {
+#viqumnjtws .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -524,7 +525,7 @@
   padding-right: 5px;
 }
 
-#yqtvwopchm .gt_first_grand_summary_row {
+#viqumnjtws .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -534,11 +535,11 @@
   border-top-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_striped {
+#viqumnjtws .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yqtvwopchm .gt_table_body {
+#viqumnjtws .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -547,7 +548,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_footnotes {
+#viqumnjtws .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -561,13 +562,13 @@
   border-right-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_footnote {
+#viqumnjtws .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#yqtvwopchm .gt_sourcenotes {
+#viqumnjtws .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -581,41 +582,41 @@
   border-right-color: #D3D3D3;
 }
 
-#yqtvwopchm .gt_sourcenote {
+#viqumnjtws .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#yqtvwopchm .gt_left {
+#viqumnjtws .gt_left {
   text-align: left;
 }
 
-#yqtvwopchm .gt_center {
+#viqumnjtws .gt_center {
   text-align: center;
 }
 
-#yqtvwopchm .gt_right {
+#viqumnjtws .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yqtvwopchm .gt_font_normal {
+#viqumnjtws .gt_font_normal {
   font-weight: normal;
 }
 
-#yqtvwopchm .gt_font_bold {
+#viqumnjtws .gt_font_bold {
   font-weight: bold;
 }
 
-#yqtvwopchm .gt_font_italic {
+#viqumnjtws .gt_font_italic {
   font-style: italic;
 }
 
-#yqtvwopchm .gt_super {
+#viqumnjtws .gt_super {
   font-size: 65%;
 }
 
-#yqtvwopchm .gt_footnote_marks {
+#viqumnjtws .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -668,16 +669,18 @@
 </table>
 </div>
 </div>
-<div id="gráfico" class="section level3">
+<div id="gráfico---ggplot2" class="section level3">
 <h3 class="hasAnchor">
-<a href="#gr%C3%A1fico" class="anchor"></a>Gráfico</h3>
+<a href="#gr%C3%A1fico---ggplot2" class="anchor"></a>Gráfico - <code>{ggplot2}</code>
+</h3>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/plot_results.html">plot_results</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></code></pre></div>
 <p><img src="electorAr_files/figure-html/unnamed-chunk-13-1.png" width="700"></p>
 </div>
-<div id="mapas" class="section level3">
+<div id="mapas---ggplot2-sf" class="section level3">
 <h3 class="hasAnchor">
-<a href="#mapas" class="anchor"></a>Mapas</h3>
+<a href="#mapas---ggplot2-sf" class="anchor"></a>Mapas - <code>{ggplot2}</code> + <code>{sf}</code>
+</h3>
 <p>Para poder mapear la elección, los datos deberían descargarse a nivel <code>departamento</code> con el parámetro <code>level</code>.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
@@ -686,15 +689,11 @@
                            round <span class="op">=</span> <span class="st">"gral"</span>, 
                            year <span class="op">=</span> <span class="fl">2015</span>, 
                            level <span class="op">=</span> <span class="st">"departamento"</span><span class="op">)</span></code></pre></div>
-</div>
-<div id="mapas-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#mapas-1" class="anchor"></a>Mapas</h3>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/map_results.html">map_results</a></span><span class="op">(</span><span class="va">datos_depto</span><span class="op">)</span></code></pre></div>
 <p><img src="electorAr_files/figure-html/unnamed-chunk-15-1.png" width="700"></p>
-<p>Este nivel de agregación nos permite también utilizar la función <code>plot_results()</code>. La misma, al detectar que se trata de datos al nivel de <code>departamentos</code> hará uso de grillas predefinidas por el paquete <a href="https://github.com/PoliticaArgentina/geoAr">geoAr</a> para ser usadas por <code>geofacet::facet_grid()</code></p>
+<p>Este nivel de agregación nos permite también utilizar la función <code>plot_results()</code>. La misma, al detectar que se trata de datos al nivel de <code>departamentos</code> hará uso de grillas predefinidas por el paquete <a href="https://github.com/PoliticaArgentina/geoAr">geoAr</a> para ser usadas por <a href="https://github.com/hafen/geofacet">geofacet</a> y su función de facetado <code>facet_grid()</code>.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/plot_results.html">plot_results</a></span><span class="op">(</span><span class="va">datos_depto</span><span class="op">)</span></code></pre></div>
