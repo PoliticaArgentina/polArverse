@@ -31,14 +31,14 @@ status](https://www.r-pkg.org/badges/version/polArverse)](https://CRAN.R-project
 [:package: {legislAr}](https://github.com/PoliticaArgentina/legislAr) -
 Datos legislativos de Argentina
 
-[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) -
+[:package: {electorAr}](https://github.com/PoliticaArgentina/electorAr) -
 Datos electorales de Argentina
 
 [:package: {opinAr}](https://github.com/PoliticaArgentina/opinAr) -
 Datos de opinión púbica de Argentina
 
-[:package: {electorAr}](https://github.com/PoliticaArgentina/opinAr) -
-Datos electorales de Argentina
+[:package: {discursAr}](https://github.com/PoliticaArgentina/discursAr) -
+Discursos políticos de Argentina
 
 [:package: {polArViz}](https://github.com/PoliticaArgentina/polArViz) -
 Vizualización de datos políticos de Argentina
