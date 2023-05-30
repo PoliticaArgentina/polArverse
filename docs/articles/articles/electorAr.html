@@ -38,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../../index.html">polArverse</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.2</span>
       </span>
     </div>
 
@@ -54,7 +54,7 @@
   <a href="../../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -86,7 +86,7 @@
 
       
 
-      </header><script src="electorAr_files/header-attrs-2.9/header-attrs.js"></script><div class="row">
+      </header><script src="electorAr_files/header-attrs-2.14/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>electorAr</h1>
@@ -101,11 +101,24 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PoliticaArgentina/polArverse">polArverse</a></span><span class="op">)</span>
-<span class="co">#&gt; -- Attaching packages ------------------------------------- polArverse0.0.1.1 --</span>
-<span class="co">#&gt; v geoAr     0.0.1.2     v electorAr 0.0.1.0</span>
-<span class="co">#&gt; v legislAr  0.0.1.0     v discursAr 0.0.1.0</span>
-<span class="co">#&gt; v opinAr    0.0.1.1     v polArViz  0.0.1.0</span></code></pre></div>
-<p><a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a> brinda herramientas que facilitan el acceso y el trabajo con datos electorales de Argentina desde R. Prácticamente todos los datos tienen como fuente el <a href="https://www.andytow.com/blog/">Atlas Electoral de Andy Tow</a>. Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde 2003 a 2019) para cargos nacionales (presidente, diputades y senadores); o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre 1946 y 2019).</p>
+<span class="co">#&gt; -- Attaching packages ------------------------------------- polArverse0.0.1.2 --</span>
+<span class="co">#&gt; v geoAr     0.0.1.4.2     v discursAr 0.0.1.0  </span>
+<span class="co">#&gt; v legislAr  0.0.1.0       v polArViz  0.0.1.0  </span>
+<span class="co">#&gt; v opinAr    0.0.1.1       v censAr    0.0.0.9  </span>
+<span class="co">#&gt; v electorAr 0.0.1.0</span>
+<span class="co">#&gt; -- CENSOS ARGENTINA ------------------------------------------------------------</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; La documentacion del paquete {censo2017} sobre el que está basado {censAr} y ejemplos de uso se encuentran en https://pacha.dev/censo2017/.</span>
+<span class="co">#&gt; Visita https://buymeacoffee.com/pacha si deseas donar para contribuir al desarrollo de software como este.</span>
+<span class="co">#&gt; Esta libreria necesita XX GB libres para la crear la base de datos localmente. Una vez creada la base, esta ocupa YYY GB en disco.</span>
+<span class="co">#&gt; </span></code></pre></div>
+<p><a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a> brinda herramientas que facilitan el acceso
+y el trabajo con datos electorales de Argentina desde R. Prácticamente
+todos los datos tienen como fuente el <a href="https://www.andytow.com/blog/">Atlas Electoral de Andy Tow</a>.
+Los mismos pueden ser (a) desagregados a nivl de mesas (con datos desde
+2003 a 2019) para cargos nacionales (presidente, diputades y senadores);
+o (b) agregados (para cargos ejectuvios, nacionales y provinciales entre
+1946 y 2019).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PoliticaArgentina/electorAr">electorAr</a></span><span class="op">)</span>
@@ -128,7 +141,9 @@
 <span class="co">#&gt;  9 arg      presi    gral   1999  ARGENTINA</span>
 <span class="co">#&gt; 10 arg      presi    gral   2003  ARGENTINA</span>
 <span class="co">#&gt; # ... with 695 more rows</span></code></pre></div>
-<p>Habiendo elegido los datos agregados, podemos, por ejemplo, con la ayuda de <a href="https://dplyr.tidyverse.org">dplyr</a> filtrar las elecciones disponibles con resultados para Goberndaro de la Provincia de Tucumán.</p>
+<p>Habiendo elegido los datos agregados, podemos, por ejemplo, con la
+ayuda de <a href="https://dplyr.tidyverse.org">dplyr</a> filtrar las elecciones disponibles con
+resultados para Goberndaro de la Provincia de Tucumán.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="co"># Filtro eleciones de interés</span>
@@ -148,8 +163,14 @@
 <span class="co">#&gt;  8 tucuman  gober    gral  2011  TUCUMAN</span>
 <span class="co">#&gt;  9 tucuman  gober    gral  2015  TUCUMAN</span>
 <span class="co">#&gt; 10 tucuman  gober    gral  2019  TUCUMAN</span></code></pre></div>
-<p>La función <code><a href="https://rdrr.io/pkg/electorAr/man/show_available_elections.html">show_available_elections()</a></code> (con el parámetro <code>source = "results"</code>) nos devuelve el listado de dichas elecciones con 4 variables relevantes (<code>district</code>, <code>category</code>, <code>round</code>, <code>year</code>) que son los parámetros necesarios a ser completados para descargar los datos de una elección determinada.</p>
-<p>Una alternativa posible es descargar una elección en particular con <code><a href="https://rdrr.io/pkg/electorAr/man/get_election_results.html">get_election_results()</a></code>:</p>
+<p>La función <code><a href="https://rdrr.io/pkg/electorAr/man/show_available_elections.html">show_available_elections()</a></code> (con el parámetro
+<code>source = "results"</code>) nos devuelve el listado de dichas
+elecciones con 4 variables relevantes (<code>district</code>,
+<code>category</code>, <code>round</code>, <code>year</code>) que son
+los parámetros necesarios a ser completados para descargar los datos de
+una elección determinada.</p>
+<p>Una alternativa posible es descargar una elección en particular con
+<code><a href="https://rdrr.io/pkg/electorAr/man/get_election_results.html">get_election_results()</a></code>:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">electorAr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/electorAr/man/get_election_results.html">get_election_results</a></span><span class="op">(</span>district <span class="op">=</span> <span class="st">"tucuman"</span>, 
@@ -168,7 +189,8 @@
 <span class="co">#&gt; 7 gober    gral   1999 23      TUCUMAN   Accion Provinciana         31    826570</span>
 <span class="co">#&gt; 8 gober    gral   1999 23      TUCUMAN   Votos En Blanco         10051    826570</span>
 <span class="co">#&gt; 9 gober    gral   1999 23      TUCUMAN   Votos Nulos              8064    826570</span></code></pre></div>
-<p>Pero también podemos descargarnos todas las elecciones juntas, del siguiente modo:</p>
+<p>Pero también podemos descargarnos todas las elecciones juntas, del
+siguiente modo:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="co"># Descargo multiples elecciones seleccionadas</span>
@@ -189,7 +211,12 @@
 <span class="co">#&gt;  8 tucuman_gober_gral_2011 &lt;spec_tbl_df [17 x 8]&gt;</span>
 <span class="co">#&gt;  9 tucuman_gober_gral_2015 &lt;spec_tbl_df [9 x 8]&gt; </span>
 <span class="co">#&gt; 10 tucuman_gober_gral_2019 &lt;spec_tbl_df [11 x 8]&gt;</span></code></pre></div>
-<p><code><a href="https://rdrr.io/pkg/electorAr/man/get_multiple_elections.html">get_multiple_elections()</a></code> tiene como paráemtro obligatorio <code>source</code> donde debe definirse cual de las dos fuentes de datos se está llamando. Además tiene como posibilidad devolver un <code>tibble</code> único (simplificando la estructura de lista de la variable <code>election</code>) con la opción <code>unnest = TRUE</code>.</p>
+<p><code><a href="https://rdrr.io/pkg/electorAr/man/get_multiple_elections.html">get_multiple_elections()</a></code> tiene como paráemtro
+obligatorio <code>source</code> donde debe definirse cual de las dos
+fuentes de datos se está llamando. Además tiene como posibilidad
+devolver un <code>tibble</code> único (simplificando la estructura de
+lista de la variable <code>election</code>) con la opción
+<code>unnest = TRUE</code>.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="op">(</span><span class="va">elecciones_simplificadas</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/electorAr/man/get_multiple_elections.html">get_multiple_elections</a></span><span class="op">(</span><span class="va">gobernadores_tucuman</span>,
@@ -212,7 +239,10 @@
 <div id="indicadores" class="section level2">
 <h2 class="hasAnchor">
 <a href="#indicadores" class="anchor"></a>INDICADORES</h2>
-<p><code>{elecotrAr}</code> provee además una familia de funciones <code>compute_</code> que calcular una serie de indicadores básicos del análisis electoral. Veamos algunos ejemplos para la elección de 1995:</p>
+<p><code>{elecotrAr}</code> provee además una familia de funciones
+<code>compute_</code> que calcular una serie de indicadores básicos del
+análisis electoral. Veamos algunos ejemplos para la elección de
+1995:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Seleciono la elección a Gobernador de TUCUMAN en 1999</span>
 <span class="op">(</span><span class="va">eleccion99</span> <span class="op">&lt;-</span> <span class="va">elecciones</span><span class="op">$</span><span class="va">election</span><span class="op">[[</span><span class="fl">5</span><span class="op">]</span><span class="op">]</span><span class="op">)</span>
@@ -269,8 +299,10 @@
 <div id="visualización" class="section level2">
 <h2 class="hasAnchor">
 <a href="#visualizaci%C3%B3n" class="anchor"></a>Visualización</h2>
-<p>Con la ayuda de <a href="https://github.com/PoliticaArgentina/polArViz">polArViz</a> podemos acceder rápidamente a una serie de visualizaciones de los datos electorales.</p>
-<p>Ppor el momento solo disponible para los descargados desde <code>source = "data"</code>. Descarguemos entonces nuevos datos:</p>
+<p>Con la ayuda de <a href="https://github.com/PoliticaArgentina/polArViz">polArViz</a> podemos acceder rápidamente a
+una serie de visualizaciones de los datos electorales.</p>
+<p>Ppor el momento solo disponible para los descargados desde
+<code>source = "data"</code>. Descarguemos entonces nuevos datos:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="va">datos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/electorAr/man/get_election_data.html">get_election_data</a></span><span class="op">(</span>district <span class="op">=</span> <span class="st">"tucuman"</span>, 
@@ -284,12 +316,12 @@
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/tabulate_results.html">tabulate_results</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></code></pre></div>
-<div id="viqumnjtws" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wdtmbvrxio" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#viqumnjtws .gt_table {
+#wdtmbvrxio .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -314,7 +346,7 @@
   border-left-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_heading {
+#wdtmbvrxio .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -326,33 +358,37 @@
   border-right-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_title {
+#wdtmbvrxio .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
 
-#viqumnjtws .gt_subtitle {
+#wdtmbvrxio .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
   padding-top: 0;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#viqumnjtws .gt_bottom_border {
+#wdtmbvrxio .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_col_headings {
+#wdtmbvrxio .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -367,7 +403,7 @@
   border-right-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_col_heading {
+#wdtmbvrxio .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -387,7 +423,7 @@
   overflow-x: hidden;
 }
 
-#viqumnjtws .gt_column_spanner_outer {
+#wdtmbvrxio .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,28 +435,31 @@
   padding-right: 4px;
 }
 
-#viqumnjtws .gt_column_spanner_outer:first-child {
+#wdtmbvrxio .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#viqumnjtws .gt_column_spanner_outer:last-child {
+#wdtmbvrxio .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#viqumnjtws .gt_column_spanner {
+#wdtmbvrxio .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
   vertical-align: bottom;
   padding-top: 5px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   overflow-x: hidden;
   display: inline-block;
   width: 100%;
 }
 
-#viqumnjtws .gt_group_heading {
-  padding: 8px;
+#wdtmbvrxio .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -441,7 +480,7 @@
   vertical-align: middle;
 }
 
-#viqumnjtws .gt_empty_group_heading {
+#wdtmbvrxio .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -456,15 +495,15 @@
   vertical-align: middle;
 }
 
-#viqumnjtws .gt_from_md > :first-child {
+#wdtmbvrxio .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#viqumnjtws .gt_from_md > :last-child {
+#wdtmbvrxio .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#viqumnjtws .gt_row {
+#wdtmbvrxio .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -483,7 +522,7 @@
   overflow-x: hidden;
 }
 
-#viqumnjtws .gt_stub {
+#wdtmbvrxio .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -492,10 +531,29 @@
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#viqumnjtws .gt_summary_row {
+#wdtmbvrxio .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wdtmbvrxio .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wdtmbvrxio .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -505,17 +563,26 @@
   padding-right: 5px;
 }
 
-#viqumnjtws .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+#wdtmbvrxio .gt_first_summary_row {
   border-top-style: solid;
-  border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_grand_summary_row {
+#wdtmbvrxio .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wdtmbvrxio .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wdtmbvrxio .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -525,7 +592,7 @@
   padding-right: 5px;
 }
 
-#viqumnjtws .gt_first_grand_summary_row {
+#wdtmbvrxio .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -535,11 +602,11 @@
   border-top-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_striped {
+#wdtmbvrxio .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#viqumnjtws .gt_table_body {
+#wdtmbvrxio .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -548,7 +615,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_footnotes {
+#wdtmbvrxio .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -562,13 +629,16 @@
   border-right-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_footnote {
+#wdtmbvrxio .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#viqumnjtws .gt_sourcenotes {
+#wdtmbvrxio .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,44 +652,71 @@
   border-right-color: #D3D3D3;
 }
 
-#viqumnjtws .gt_sourcenote {
+#wdtmbvrxio .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#viqumnjtws .gt_left {
+#wdtmbvrxio .gt_left {
   text-align: left;
 }
 
-#viqumnjtws .gt_center {
+#wdtmbvrxio .gt_center {
   text-align: center;
 }
 
-#viqumnjtws .gt_right {
+#wdtmbvrxio .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#viqumnjtws .gt_font_normal {
+#wdtmbvrxio .gt_font_normal {
   font-weight: normal;
 }
 
-#viqumnjtws .gt_font_bold {
+#wdtmbvrxio .gt_font_bold {
   font-weight: bold;
 }
 
-#viqumnjtws .gt_font_italic {
+#wdtmbvrxio .gt_font_italic {
   font-style: italic;
 }
 
-#viqumnjtws .gt_super {
+#wdtmbvrxio .gt_super {
   font-size: 65%;
 }
 
-#viqumnjtws .gt_footnote_marks {
+#wdtmbvrxio .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#wdtmbvrxio .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wdtmbvrxio .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#wdtmbvrxio .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#wdtmbvrxio .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 </style>
 <table class="table gt_table">
@@ -638,27 +735,27 @@
 <tbody class="gt_table_body">
 <tr>
 <td class="gt_row gt_left">0131-ALIANZA FRENTE PARA LA VICTORIA</td>
-<td class="gt_row gt_right">43.5&amp;percnt;</td>
+<td class="gt_row gt_right">43.5%</td>
 </tr>
 <tr>
 <td class="gt_row gt_left">0135-ALIANZA CAMBIEMOS</td>
-<td class="gt_row gt_right">28.4&amp;percnt;</td>
+<td class="gt_row gt_right">28.4%</td>
 </tr>
 <tr>
 <td class="gt_row gt_left">blancos</td>
-<td class="gt_row gt_right">14.7&amp;percnt;</td>
+<td class="gt_row gt_right">14.7%</td>
 </tr>
 <tr>
 <td class="gt_row gt_left">0177-PARTIDO MOVIMIENTO DE PARTICIPACION CIUDADANA</td>
-<td class="gt_row gt_right">10.0&amp;percnt;</td>
+<td class="gt_row gt_right">10.0%</td>
 </tr>
 <tr>
 <td class="gt_row gt_left">0137-ALIANZA FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES</td>
-<td class="gt_row gt_right">2.7&amp;percnt;</td>
+<td class="gt_row gt_right">2.7%</td>
 </tr>
 <tr>
 <td class="gt_row gt_left">nulos</td>
-<td class="gt_row gt_right">0.6&amp;percnt;</td>
+<td class="gt_row gt_right">0.6%</td>
 </tr>
 </tbody>
 <tfoot class="gt_sourcenotes"><tr>
@@ -681,7 +778,8 @@
 <h3 class="hasAnchor">
 <a href="#mapas---ggplot2-sf" class="anchor"></a>Mapas - <code>{ggplot2}</code> + <code>{sf}</code>
 </h3>
-<p>Para poder mapear la elección, los datos deberían descargarse a nivel <code>departamento</code> con el parámetro <code>level</code>.</p>
+<p>Para poder mapear la elección, los datos deberían descargarse a nivel
+<code>departamento</code> con el parámetro <code>level</code>.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="va">datos_depto</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/electorAr/man/get_election_data.html">get_election_data</a></span><span class="op">(</span>district <span class="op">=</span> <span class="st">"tucuman"</span>, 
@@ -693,7 +791,12 @@
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/map_results.html">map_results</a></span><span class="op">(</span><span class="va">datos_depto</span><span class="op">)</span></code></pre></div>
 <p><img src="electorAr_files/figure-html/unnamed-chunk-15-1.png" width="700"></p>
-<p>Este nivel de agregación nos permite también utilizar la función <code>plot_results()</code>. La misma, al detectar que se trata de datos al nivel de <code>departamentos</code> hará uso de grillas predefinidas por el paquete <a href="https://github.com/PoliticaArgentina/geoAr">geoAr</a> para ser usadas por <a href="https://github.com/hafen/geofacet">geofacet</a> y su función de facetado <code>facet_grid()</code>.</p>
+<p>Este nivel de agregación nos permite también utilizar la función
+<code>plot_results()</code>. La misma, al detectar que se trata de datos
+al nivel de <code>departamentos</code> hará uso de grillas predefinidas
+por el paquete <a href="https://github.com/PoliticaArgentina/geoAr">geoAr</a> para ser usadas por
+<a href="https://github.com/hafen/geofacet">geofacet</a> y su función de facetado
+<code>facet_grid()</code>.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R">
 <span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/plot_results.html">plot_results</a></span><span class="op">(</span><span class="va">datos_depto</span><span class="op">)</span></code></pre></div>

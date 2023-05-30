@@ -38,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">polArverse</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1.2</span>
       </span>
     </div>
 
@@ -54,7 +54,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -94,27 +94,53 @@
 <a href="#polarverse" class="anchor"></a><code>{polArverse}</code>
 </h3>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># devtools::install_github("politicaargentina/polArverse")</span>
+<code class="sourceCode R">
+<span class="co"># devtools::install_github("politicaargentina/polArverse")</span>
 
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PoliticaArgentina/polArverse">polArverse</a></span><span class="op">)</span>
-<span class="co">#&gt; -- Attaching packages ------------------------------------- polArverse0.0.1.0 --</span>
-<span class="co">#&gt; v geoAr     0.0.1.2     v electorAr 0.0.1.0</span>
-<span class="co">#&gt; v legislAr  0.0.1.0     v discursAr 0.0.1.0</span>
-<span class="co">#&gt; v opinAr    0.0.1.1     v polArViz  0.0.1.0</span></code></pre></div>
+<span class="co">#&gt; -- Attaching packages ------------------------------------- polArverse0.0.1.2 --</span>
+<span class="co">#&gt; v geoAr     0.0.1.4.2     v discursAr 0.0.1.0  </span>
+<span class="co">#&gt; v legislAr  0.0.1.0       v polArViz  0.0.1.0  </span>
+<span class="co">#&gt; v opinAr    0.0.1.1       v censAr    0.0.0.9  </span>
+<span class="co">#&gt; v electorAr 0.0.1.0</span>
+<span class="co">#&gt; -- CENSOS ARGENTINA ------------------------------------------------------------</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; La documentacion del paquete {censo2017} sobre el que está basado {censAr} y ejemplos de uso se encuentran en https://pacha.dev/censo2017/.</span>
+<span class="co">#&gt; Visita https://buymeacoffee.com/pacha si deseas donar para contribuir al desarrollo de software como este.</span>
+<span class="co">#&gt; Esta libreria necesita XX GB libres para la crear la base de datos localmente. Una vez creada la base, esta ocupa YYY GB en disco.</span>
+<span class="co">#&gt; </span></code></pre></div>
 </div>
-<div id="-universo-de-package-para-trabajar-con-herramientas-y-datos-de-política-argentina-desde-r" class="section level2">
+<div id="id_-universo-de-package-para-trabajar-con-herramientas-y-datos-de-política-argentina-desde-r" class="section level2">
 <h2 class="hasAnchor">
-<a href="#-universo-de-package-para-trabajar-con-herramientas-y-datos-de-pol%C3%ADtica-argentina-desde-r" class="anchor"></a><a><img src="reference/figures/logo.png" align="right" width="300"></a> Universo de <span class="emoji" data-emoji="package">📦</span> para trabajar con herramientas y datos de <code>Pol</code>ítica <code>Ar</code>gentina desde <code>R</code>.</h2>
+<a href="#id_-universo-de-package-para-trabajar-con-herramientas-y-datos-de-pol%C3%ADtica-argentina-desde-r" class="anchor"></a><a><img src="reference/figures/logo.png" align="right" width="300"></a>
+Universo de <span class="emoji" data-emoji="package">📦</span> para
+trabajar con herramientas y datos de <code>Pol</code>ítica
+<code>Ar</code>gentina desde <code>R</code>.</h2>
 <!-- badges: start -->
 
 <!-- badges: end -->
-<p><a href="https://github.com/PoliticaArgentina/geoAr"><span class="emoji" data-emoji="package">📦</span> {geoAr}</a> - Datos <em>geo</em> Argentina:</p>
-<p><a href="https://github.com/PoliticaArgentina/legislAr"><span class="emoji" data-emoji="package">📦</span> {legislAr}</a> - Datos legislativos de Argentina</p>
-<p><a href="https://github.com/PoliticaArgentina/opinAr"><span class="emoji" data-emoji="package">📦</span> {electorAr}</a> - Datos electorales de Argentina</p>
-<p><a href="https://github.com/PoliticaArgentina/opinAr"><span class="emoji" data-emoji="package">📦</span> {opinAr}</a> - Datos de opinión púbica de Argentina</p>
-<p><a href="https://github.com/PoliticaArgentina/opinAr"><span class="emoji" data-emoji="package">📦</span> {electorAr}</a> - Datos electorales de Argentina</p>
-<p><a href="https://github.com/PoliticaArgentina/polArViz"><span class="emoji" data-emoji="package">📦</span> {polArViz}</a> - Vizualización de datos políticos de Argentina</p>
-<p><a href="https://github.com/PoliticaArgentina/geoAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"></a> <a href="https://github.com/PoliticaArgentina/opinAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/opinAr.PNG?raw=true" width="240"></a> <a href="https://github.com/PoliticaArgentina/legislAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/legislAr.png?raw=true" width="240"></a> <a href="https://github.com/PoliticaArgentina/discursAr"><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/discursAr.png?raw=true" width="240"></a> <a href="https://github.com/PoliticaArgentina/electorAr"><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="240"></a> <a href="https://github.com/PoliticaArgentina/polar_bot"><img src="https://github.com/PoliticaArgentina/polar_bot/raw/master/hex/polArbot.png" width="240"></a> <a href="https://github.com/PoliticaArgentina/data_warehouse"><img src="https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polAr10-10-10.png" width="240"></a></p>
+<p><a href="https://github.com/PoliticaArgentina/geoAr"><span class="emoji" data-emoji="package">📦</span> {geoAr}</a> - Herramientas
+y Datos <em>geo</em> Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/censAr"><span class="emoji" data-emoji="package">📦</span> {censAr}</a> - Datos
+censales de Argentina (2010)</p>
+<p><a href="https://github.com/PoliticaArgentina/legislAr"><span class="emoji" data-emoji="package">📦</span> {legislAr}</a> - Datos
+legislativos de Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/electorAr"><span class="emoji" data-emoji="package">📦</span> {electorAr}</a> - Datos
+electorales de Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/opinAr"><span class="emoji" data-emoji="package">📦</span> {opinAr}</a> - Datos de
+opinión púbica de Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/discursAr"><span class="emoji" data-emoji="package">📦</span> {discursAr}</a> - Discursos
+políticos de Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/polArViz"><span class="emoji" data-emoji="package">📦</span> {polArViz}</a> -
+Vizualización de datos políticos de Argentina</p>
+<p><a href="https://github.com/PoliticaArgentina/geoAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/geoAr.png?raw=true" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/opinAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/opinAr.PNG?raw=true" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/legislAr"><img src="https://github.com/politicaargentina/data_warehouse/raw/master/hex/legislAr.png?raw=true" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/discursAr"><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/discursAr.png?raw=true" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/electorAr"><img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/polar_bot"><img src="https://github.com/PoliticaArgentina/polar_bot/raw/master/hex/polArbot.png" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/data_warehouse"><img src="https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polAr10-10-10.png" width="240"></a>
+<a href="https://github.com/PoliticaArgentina/censAr"><img src="https://raw.githubusercontent.com/PoliticaArgentina/censAr/main/inst/img/censAr.png" width="240"></a></p>
 </div>
 
   </div>
