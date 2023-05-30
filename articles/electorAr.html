@@ -98,9 +98,16 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PoliticaArgentina/polArverse" class="external-link">polArverse</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; ── <span style="font-weight: bold;">Attaching packages</span> ───────────────────────────────────── polArverse0.0.1.<span style="color: #BB0000;">1</span> ──</span></span>
-<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">geoAr    </span> 0.0.1.<span style="color: #BB0000;">4</span>.<span style="color: #BB0000;">2</span>.<span style="color: #BB0000;">1</span>     <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">electorAr</span> 0.0.1.<span style="color: #BB0000;">0</span>    </span></span>
-<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">legislAr </span> 0.0.1.<span style="color: #BB0000;">0</span>         <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">discursAr</span> 0.0.1.<span style="color: #BB0000;">0</span>    </span></span>
-<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">opinAr   </span> 0.0.1.<span style="color: #BB0000;">1</span>         <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">polArViz </span> 0.0.1.<span style="color: #BB0000;">0</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">geoAr    </span> 0.0.1.<span style="color: #BB0000;">4</span>.<span style="color: #BB0000;">2</span>.<span style="color: #BB0000;">1</span>     <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">discursAr</span> 0.0.1.<span style="color: #BB0000;">0</span>    </span></span>
+<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">legislAr </span> 0.0.1.<span style="color: #BB0000;">0</span>         <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">polArViz </span> 0.0.1.<span style="color: #BB0000;">0</span>    </span></span>
+<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">opinAr   </span> 0.0.1.<span style="color: #BB0000;">1</span>         <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">censAr   </span> 0.0.0.<span style="color: #BB0000;">9</span>    </span></span>
+<span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">electorAr</span> 0.0.1.<span style="color: #BB0000;">1</span></span></span>
+<span><span class="co">#&gt; ── <span style="font-weight: bold;">CENSOS ARGENTINA</span> ────────────────────────────────────────────────────────────</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; La documentacion del paquete {censo2017} sobre el que está basado {censAr} y ejemplos de uso se encuentran en https://pacha.dev/censo2017/.</span></span>
+<span><span class="co">#&gt; Visita https://buymeacoffee.com/pacha si deseas donar para contribuir al desarrollo de software como este.</span></span>
+<span><span class="co">#&gt; Esta libreria necesita XX GB libres para la crear la base de datos localmente. Una vez creada la base, esta ocupa YYY GB en disco.</span></span>
+<span><span class="co">#&gt; </span></span></code></pre></div>
 <p><a href="https://github.com/PoliticaArgentina/electorAr" class="external-link">electorAr</a> brinda herramientas que facilitan el acceso
 y el trabajo con datos electorales de Argentina desde R. Prácticamente
 todos los datos tienen como fuente el <a href="https://www.andytow.com/blog/" class="external-link">Atlas Electoral de Andy Tow</a>.
@@ -304,23 +311,23 @@ una serie de visualizaciones de los datos electorales.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="fu">polArViz</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/polArViz/man/tabulate_results.html" class="external-link">tabulate_results</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span></code></pre></div>
-<div id="eohnycifzb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#eohnycifzb table {
+<div id="tuslbjstge" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tuslbjstge table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eohnycifzb thead, #eohnycifzb tbody, #eohnycifzb tfoot, #eohnycifzb tr, #eohnycifzb td, #eohnycifzb th {
+#tuslbjstge thead, #tuslbjstge tbody, #tuslbjstge tfoot, #tuslbjstge tr, #tuslbjstge td, #tuslbjstge th {
   border-style: none;
 }
 
-#eohnycifzb p {
+#tuslbjstge p {
   margin: 0;
   padding: 0;
 }
 
-#eohnycifzb .gt_table {
+#tuslbjstge .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -346,12 +353,12 @@ una serie de visualizaciones de los datos electorales.</p>
   border-left-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_caption {
+#tuslbjstge .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eohnycifzb .gt_title {
+#tuslbjstge .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -363,7 +370,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-bottom-width: 0;
 }
 
-#eohnycifzb .gt_subtitle {
+#tuslbjstge .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -375,7 +382,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-top-width: 0;
 }
 
-#eohnycifzb .gt_heading {
+#tuslbjstge .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -387,13 +394,13 @@ una serie de visualizaciones de los datos electorales.</p>
   border-right-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_bottom_border {
+#tuslbjstge .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_col_headings {
+#tuslbjstge .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -408,7 +415,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-right-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_col_heading {
+#tuslbjstge .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -428,7 +435,7 @@ una serie de visualizaciones de los datos electorales.</p>
   overflow-x: hidden;
 }
 
-#eohnycifzb .gt_column_spanner_outer {
+#tuslbjstge .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -440,15 +447,15 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 4px;
 }
 
-#eohnycifzb .gt_column_spanner_outer:first-child {
+#tuslbjstge .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eohnycifzb .gt_column_spanner_outer:last-child {
+#tuslbjstge .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eohnycifzb .gt_column_spanner {
+#tuslbjstge .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -460,11 +467,11 @@ una serie de visualizaciones de los datos electorales.</p>
   width: 100%;
 }
 
-#eohnycifzb .gt_spanner_row {
+#tuslbjstge .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eohnycifzb .gt_group_heading {
+#tuslbjstge .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -490,7 +497,7 @@ una serie de visualizaciones de los datos electorales.</p>
   text-align: left;
 }
 
-#eohnycifzb .gt_empty_group_heading {
+#tuslbjstge .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -505,15 +512,15 @@ una serie de visualizaciones de los datos electorales.</p>
   vertical-align: middle;
 }
 
-#eohnycifzb .gt_from_md > :first-child {
+#tuslbjstge .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eohnycifzb .gt_from_md > :last-child {
+#tuslbjstge .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eohnycifzb .gt_row {
+#tuslbjstge .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -532,7 +539,7 @@ una serie de visualizaciones de los datos electorales.</p>
   overflow-x: hidden;
 }
 
-#eohnycifzb .gt_stub {
+#tuslbjstge .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -545,7 +552,7 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 5px;
 }
 
-#eohnycifzb .gt_stub_row_group {
+#tuslbjstge .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -559,15 +566,15 @@ una serie de visualizaciones de los datos electorales.</p>
   vertical-align: top;
 }
 
-#eohnycifzb .gt_row_group_first td {
+#tuslbjstge .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eohnycifzb .gt_row_group_first th {
+#tuslbjstge .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eohnycifzb .gt_summary_row {
+#tuslbjstge .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -577,16 +584,16 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 5px;
 }
 
-#eohnycifzb .gt_first_summary_row {
+#tuslbjstge .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_first_summary_row.thick {
+#tuslbjstge .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eohnycifzb .gt_last_summary_row {
+#tuslbjstge .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -596,7 +603,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_grand_summary_row {
+#tuslbjstge .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -606,7 +613,7 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 5px;
 }
 
-#eohnycifzb .gt_first_grand_summary_row {
+#tuslbjstge .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -616,7 +623,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-top-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_last_grand_summary_row_top {
+#tuslbjstge .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -626,11 +633,11 @@ una serie de visualizaciones de los datos electorales.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_striped {
+#tuslbjstge .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eohnycifzb .gt_table_body {
+#tuslbjstge .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -639,7 +646,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_footnotes {
+#tuslbjstge .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -653,7 +660,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-right-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_footnote {
+#tuslbjstge .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -662,7 +669,7 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 5px;
 }
 
-#eohnycifzb .gt_sourcenotes {
+#tuslbjstge .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -676,7 +683,7 @@ una serie de visualizaciones de los datos electorales.</p>
   border-right-color: #D3D3D3;
 }
 
-#eohnycifzb .gt_sourcenote {
+#tuslbjstge .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -684,63 +691,63 @@ una serie de visualizaciones de los datos electorales.</p>
   padding-right: 5px;
 }
 
-#eohnycifzb .gt_left {
+#tuslbjstge .gt_left {
   text-align: left;
 }
 
-#eohnycifzb .gt_center {
+#tuslbjstge .gt_center {
   text-align: center;
 }
 
-#eohnycifzb .gt_right {
+#tuslbjstge .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eohnycifzb .gt_font_normal {
+#tuslbjstge .gt_font_normal {
   font-weight: normal;
 }
 
-#eohnycifzb .gt_font_bold {
+#tuslbjstge .gt_font_bold {
   font-weight: bold;
 }
 
-#eohnycifzb .gt_font_italic {
+#tuslbjstge .gt_font_italic {
   font-style: italic;
 }
 
-#eohnycifzb .gt_super {
+#tuslbjstge .gt_super {
   font-size: 65%;
 }
 
-#eohnycifzb .gt_footnote_marks {
+#tuslbjstge .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eohnycifzb .gt_asterisk {
+#tuslbjstge .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eohnycifzb .gt_indent_1 {
+#tuslbjstge .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eohnycifzb .gt_indent_2 {
+#tuslbjstge .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eohnycifzb .gt_indent_3 {
+#tuslbjstge .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eohnycifzb .gt_indent_4 {
+#tuslbjstge .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eohnycifzb .gt_indent_5 {
+#tuslbjstge .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
