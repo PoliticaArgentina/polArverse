@@ -22,9 +22,10 @@ Imports:
     electorAr,
     opinAr,
     discursAr, 
-    polArViz
+    polArViz, 
+    censAr
 Remotes: 
-    PoliticaArgentina/geoAr,
+    PoliticaArgentina/censAr,
     PoliticaArgentina/legislAr,
     PoliticaArgentina/electorAr,
     PoliticaArgentina/opinAr,
