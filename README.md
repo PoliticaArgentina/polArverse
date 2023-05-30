@@ -63,4 +63,4 @@ Vizualización de datos políticos de Argentina
 [<img src="https://github.com/politicaargentina/data_warehouse/blob/master/hex/electorAr.png?raw=true" width="240"/>](https://github.com/PoliticaArgentina/electorAr)
 [<img src="https://github.com/PoliticaArgentina/polar_bot/raw/master/hex/polArbot.png" width="240"/>](https://github.com/PoliticaArgentina/polar_bot)
 [<img src="https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polAr10-10-10.png" width="240"/>](https://github.com/PoliticaArgentina/data_warehouse)
-[<img src="https://user-images.githubusercontent.com/12114624/170827237-86cf8586-204b-46b0-a0f2-c38184966f75.jpg" width="240"/>](https://github.com/PoliticaArgentina/censAr)
+[<img src="https://raw.githubusercontent.com/PoliticaArgentina/censAr/main/inst/img/censAr.png" width="240"/>](https://github.com/PoliticaArgentina/censAr)
